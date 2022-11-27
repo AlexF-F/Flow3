@@ -1,8 +1,8 @@
 <p align="center"><img src="https://i.imgur.com/A6bWGFl.gif"/></p>
 
-<h1 align="center">Segundo Flow </h1>
+<h1 align="center">Tercer Flow </h1>
 
-<h4> Este repositorio contiene el sprimer ejercicio en Node Red,El flow 2 representa el segundo ejercicio a realizar con NodeRed. Este ejecicio consiste en darle un formato legible para humanos al timestamp y mostrar la fecha en la sección debug. </h4> 
+<h4> Este repositorio contiene el sprimer ejercicio en Node Red,El flow 3 representa el segundo ejercicio a realizar con NodeRed. Este ejecicio consiste en darle un formato legible para humanos al timestamp y mostrar la fecha en la sección debug. </h4> 
 
 
 ### CONTENIDO
