@@ -2,7 +2,7 @@
 
 <h1 align="center">Tercer Flow </h1>
 
-<h4> Este repositorio contiene el sprimer ejercicio en Node Red,El flow 3 representa el segundo ejercicio a realizar con NodeRed. Este ejecicio consiste en darle un formato legible para humanos al timestamp y mostrar la fecha en la sección debug. </h4> 
+<h4> Este repositorio contiene el sprimer ejercicio en Node Red,El flow 3 representa el segundo ejercicio a realizar con NodeRed. Este ejercicio consiste en mostrar la fecha en un tablero con ayuda de los nodos node-red-dashboard. </h4> 
 
 
 ### CONTENIDO
