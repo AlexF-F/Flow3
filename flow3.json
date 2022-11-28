@@ -1,0 +1,112 @@
+[
+    {
+        "id": "f01b8b8b2adbdf8e",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "57f84acfcb5db0d8",
+        "type": "inject",
+        "z": "f01b8b8b2adbdf8e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "21f326c9dd8b9284"
+            ]
+        ]
+    },
+    {
+        "id": "923882fa650395d4",
+        "type": "debug",
+        "z": "f01b8b8b2adbdf8e",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "21f326c9dd8b9284",
+        "type": "function",
+        "z": "f01b8b8b2adbdf8e",
+        "name": "function 1",
+        "func": "var date = new Date(msg.payload);\nmsg.payload = date.toString();\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 80,
+        "wires": [
+            [
+                "923882fa650395d4",
+                "c354e2f87e182a4c"
+            ]
+        ]
+    },
+    {
+        "id": "c354e2f87e182a4c",
+        "type": "ui_text",
+        "z": "f01b8b8b2adbdf8e",
+        "group": "23944ed91a846b14",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Time start interpretado",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 740,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "23944ed91a846b14",
+        "type": "ui_group",
+        "name": "Fecha",
+        "tab": "fd295559362ec0cb",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fd295559362ec0cb",
+        "type": "ui_tab",
+        "name": "Flow3",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
